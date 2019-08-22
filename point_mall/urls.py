@@ -28,4 +28,5 @@ urlpatterns = [
     path('tags/', include('item.urls.tag_urls')),
     path('me/', include('user.urls.me_urls')),
     path('media/uploads/item_images/<str:file_name>', views.image_view),
+    path('', views.root_view),
 ]
