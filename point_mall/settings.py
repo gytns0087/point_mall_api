@@ -86,7 +86,7 @@ DATABASES = {
         'NAME': 'point_mall',
         'USER': 'root',
         'PASSWORD': '1q2w3e4r',
-        'HOST': 'point-mall.cyrkiqmrpyw9.us-east-1.rds.amazonaws.com',
+        'HOST': 'pointmall.ct1ubnkceah3.ap-northeast-2.rds.amazonaws.com',
         'PORT': '3306'
     }
 }
@@ -147,12 +147,12 @@ OAUTH2_PROVIDER = {
     'OAUTH2_BACKEND_CLASS': 'oauth2_provider.oauth2_backends.JSONOAuthLibCore',
 }
 
-AWS_ACCESS_KEY_ID = 'ASIA3KTXHTNGFDHTIM4E'
-AWS_SECRET_ACCESS_KEY = 'DDYpam6M6ymwUsWUsWwc33uJ8jA7yYBURlmaNU2w'
+# AWS_ACCESS_KEY_ID = 'AKIAW7CFVXVN4FMERJ5U'
+# AWS_SECRET_ACCESS_KEY = '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'
 AWS_SESSION_TOKEN = 'FQoGZXIvYXdzEML//////////wEaDPUmNo31Qc5K2A+uxyKCAj730rGwVJDxR+2BufHMxLS/cHcav8+Fe4Jf5993mlH5/QG9GfVao4oaiILHF9G818ld5ps04kZ3XD5dMeOnEGtMAIgKFeBgM5HEWKwd5Qq9yBpNdrMyjIviMOjEgp3utNFWGLXuDjeqpEIdxJMnvfX5d0YDlOOOA/6eDNwf0vh94Mng1QZMC5bDgnvc91GL4HGKE26ToWJvjEVQRPCRj5zr+c+TnZy6T8AfvFT1l+PsEjr2FMTrQUC0P7bJd/acByJ/htYkNk8JX7rZSixa/gX8VeG8XecUVlacOta1ryiaZE2EVcuOxQNi46vm9J1wuYJRKuNzUR58zRrWb3bmscC58Sjb3ZPrBQ=='
 
-AWS_STORAGE_BUCKET_NAME = 'api.hyosoooni.com'
-AWS_S3_CUSTOM_DOMAIN = 'd21w72k3g7tadk.cloudfront.net'
+AWS_STORAGE_BUCKET_NAME = 'cdn.pointmall.hyosoooni'
+AWS_S3_CUSTOM_DOMAIN = 'd1ikr21k74vedf.cloudfront.net'
 AWS_S3_URL = 'https://%s/' % AWS_S3_CUSTOM_DOMAIN
 AWS_S3_SIGNATURE_VERSION = 's3v4'
 
@@ -162,5 +162,4 @@ STATICFILES_STORAGE = 'point_mall.storages.StaticStorage'
 
 AWS_LOCATION = 'assets/'
 ASSET_URL = '%s%s' % (AWS_S3_URL, AWS_LOCATION)
-# DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
-DEFAULT_FILE_STORAGE = 'point_mall.storages.FileStorage'
+DEFAULT_FILE_STORAGE = 'storages.backends.s3botos3.S3Boto3Storage'
