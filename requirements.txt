@@ -6,7 +6,7 @@ Django==2.2.3
 django-cors-headers==3.0.2
 django-oauth-toolkit==1.2.0
 django-storages==1.7.1
-djangorestframework==3.10.2
+djangorestframework==3.11.2
 docutils==0.15.2
 idna==2.8
 jmespath==0.9.4
